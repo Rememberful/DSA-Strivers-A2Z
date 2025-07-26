@@ -30,7 +30,7 @@ int countdigits(long long x) {
         x /= 10;
     }
     cout << count << endl;
-    return count;
+    //return count;
 }
 
 int main(){

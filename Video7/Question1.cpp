@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath> // For log10 function
 using namespace std;
 
 // void countdigits(int n){
@@ -22,15 +23,21 @@ using namespace std;
 //     return count; // Return the count of digits
 // }  
 
-int countdigits(long long x) {
-    if (x == 0) return 1;
-    int count = 0;
-    while (x > 0) {
-        count++;
-        x /= 10;
-    }
-    cout << count << endl;
-    //return count;
+// int countdigits(long long x) {
+//     if (x == 0) return 1;
+//     int count = 0;
+//     while (x > 0) {
+//         count++;
+//         x /= 10;
+//     }
+//     cout << count << endl;
+//     //return count;
+// }
+
+int countdigits(int n){
+
+    int cnt = (int)log10(n) + 1; // Using log10 to count digits
+    cout << cnt << endl; // Output the count of digits
 }
 
 int main(){
